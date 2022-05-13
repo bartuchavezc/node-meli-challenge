@@ -1,8 +1,6 @@
 function isMutant(dna) {
 
     const reg = new RegExp(/([A]{4}|[T]{4}|[G]{4}|[C]{4})/g);
-
-    console.log(dna.length, dna[0].length);
     
     if (dna.length == dna[0].length) {
         
