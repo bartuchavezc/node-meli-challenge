@@ -1,11 +1,9 @@
-const express = require('express');
-const app = express();
+const { configure, initServer } = require('./src/app/bootstrap');
 
-const PORT = process.env.PORT || 3000;
+const app = require('express')();
+const port = process.env.PORT || 3000;
 
-app.use(express.json());
-app.use('/mutant', require('./src/app/mutant/mutant.router'));
+configure(app);
+initServer(app, port);
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+
