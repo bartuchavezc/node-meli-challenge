@@ -1,4 +1,4 @@
-const IsMuttantService = require('../services/IsMuttantService');
+const IsMuttantService = require('../services/IsMutantService');
 
 function isMutant(req, res) {
     try {
