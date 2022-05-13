@@ -1,13 +1,22 @@
 const { Sequelize } = require("sequelize");
+const dbConfig = require("../../config/config");
+const appConfig = require("../../../config/env.config");
 
-const sequelizePostgressClient = new Sequelize({
+const options = {
     dialect: "postgres",
-    host: `${process.env.DB_SOCKET_PATH}/${process.env.INSTANCE_CONNECTION_NAME}`, //"34.121.37.167",
-    // dialectOptions: {
-        // socketPath: "/cloudsql/bartucicd:us-central1:pg-sql-test"
-    // }
-    username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-});
+    host: dbConfig.host,
+    username: dbConfig.username,
+    password: dbConfig.password,
+}
+
+if (appConfig.enviroment == "production" && dbConfig.provider == "GCP") {
+    options.host = `${process.env.DB_SOCKET_PATH}/${process.env.INSTANCE_CONNECTION_NAME}`;
+    options.dialectOptions = {
+        socketPath: process.env.DB_SOCKET_PATH
+    };
+}
+
+const sequelizePostgressClient = new Sequelize(options);
+
 
 module.exports = sequelizePostgressClient;
