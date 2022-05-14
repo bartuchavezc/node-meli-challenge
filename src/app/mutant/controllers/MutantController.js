@@ -1,4 +1,11 @@
 const IsMuttantService = require('../services/IsMutantService');
+const SaveIsMutantResultService = require('../services/SaveIsMutantResultService');
+const MutantStatsService = require('../services/MutantStatsService');
+
+async function getMutantStats(req, res) {
+    const mutants = await MutantStatsService.getMutantStats();
+    return res.json(mutants);
+}
 
 function isMutant(req, res) {
     try {
@@ -6,7 +13,9 @@ function isMutant(req, res) {
 
         const mutant = IsMuttantService.isMutant(dna);
 
-        res.json({
+        SaveIsMutantResultService.save(dna.join("\n"), mutant);
+
+        return res.json({
             isMutant: mutant
         });
 
@@ -17,4 +26,4 @@ function isMutant(req, res) {
     }
 }
 
-module.exports = { isMutant };
+module.exports = { isMutant, getMutantStats };

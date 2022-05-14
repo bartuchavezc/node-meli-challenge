@@ -18,7 +18,7 @@ function isMutant(dna) {
             if (columns.length <= 0) columns = dna[y].split('');
             else columns = columns.map((c, i) => c + dna[y][i]);
         }
-
+        
         for (let x = 0; x < columns.length; x++) {
             if (reg.test(columns[x])) return true;
         }
