@@ -8,8 +8,7 @@ const MutantModel = require("../models/MutantModel");
  */
 async function save(dna, isMutant) {
     const mutantData = { id: uuidv4(), dna, isMutant };
-    await MutantModel.create(mutantData)
-    .then(result => console.log(`Mutant saved successfully \n`, result))
+    return await MutantModel.create(mutantData)
     .catch(err => {
         console.error(`Something wrong saving is mutant result \n`, mutantData, err);
     });

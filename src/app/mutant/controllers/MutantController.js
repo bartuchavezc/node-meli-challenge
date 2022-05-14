@@ -1,9 +1,9 @@
 const IsMuttantService = require('../services/IsMutantService');
 const SaveIsMutantResultService = require('../services/SaveIsMutantResultService');
-const MutantStatsService = require('../services/MutantStatsService');
+const GetMutantStatsService = require('../services/GetMutantStatsService');
 
 async function getMutantStats(req, res) {
-    const mutants = await MutantStatsService.getMutantStats();
+    const mutants = await GetMutantStatsService.getMutantStats();
     return res.json(mutants);
 }
 

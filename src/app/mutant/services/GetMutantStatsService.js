@@ -18,8 +18,8 @@ async function getMutantStats() {
     const stats = await db.query(query, { type: Sequelize.QueryTypes.SELECT });
 
     return {
-        mutants: stats[0].mutants,
-        humans: stats[0].humans,
+        count_mutant_dna: stats[0].mutants,
+        count_human_dna: stats[0].humans,
         ratio: stats[0].mutants / stats[0].humans
     }
 }

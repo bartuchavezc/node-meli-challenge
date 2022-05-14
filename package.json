@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test jest --runInBand",
+    "test-report": "NODE_ENV=test jest --runInBand --coverage --coverageDirectory='./' --collectCoverageFrom='./src/app/**/*.js'"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +13,14 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "faker": "^6.6.6",
     "jest": "^28.1.0",
+    "jest-cli": "^28.1.0",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8",
+    "supertest": "^6.2.3",
     "uuid": "^8.3.2"
   }
 }

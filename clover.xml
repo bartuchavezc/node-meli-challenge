@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1652561505820" clover="3.2.0">
+  <project timestamp="1652561505820" name="All files">
+    <metrics statements="69" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="17" coveredmethods="7" elements="114" coveredelements="45" complexity="0" loc="69" ncloc="69" packages="5" files="8" classes="8"/>
+    <package name="app">
+      <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="bootstrap.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/bootstrap.js">
+        <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+      </file>
+      <file name="index.router.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/index.router.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.mutant">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="mutant.router.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/mutant.router.js">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.mutant.controllers">
+      <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="MutantController.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/controllers/MutantController.js">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.mutant.models">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="MutantModel.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/models/MutantModel.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.mutant.services">
+      <metrics statements="33" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="10" coveredmethods="7"/>
+      <file name="GetMutantStatsService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/GetMutantStatsService.js">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+      </file>
+      <file name="IsMutantService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/IsMutantService.js">
+        <metrics statements="20" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="7" coveredmethods="7"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1861" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1860" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="3448448" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1856" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="46412" type="cond" truecount="2" falsecount="2"/>
+        <line num="31" count="46412" type="cond" truecount="2" falsecount="2"/>
+        <line num="33" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="46412" type="cond" truecount="2" falsecount="2"/>
+        <line num="35" count="46412" type="cond" truecount="2" falsecount="2"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+      <file name="SaveIsMutantResultService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/SaveIsMutantResultService.js">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
