@@ -1,6 +1,6 @@
 const db = require("../../../database/sequelize/postgresql/postgres.client");
 const GetMutantStatsService = require("../../../app/mutant/services/GetMutantStatsService");
-const MutantModel = require("../../../app/mutant/models/MutantModel");
+const SaveMutantService = require("../../../app/mutant/services/SaveIsMutantResultService");
 
 describe('Save mutant service', () => {
 
@@ -15,29 +15,33 @@ describe('Save mutant service', () => {
             'CCCCTA',
         ].join('\n');
 
-        let mutants = new Array(40).map(x => {return { dna: fake_dna, isMutant: true }});
-        let humans = new Array(100).map(x => {return { dna: fake_dna, isMutant: false }});
-
-        MutantModel.bulkCreate([mutants.concat(humans)]);
+        for (let index = 0; index < 10; index++) {
+            await SaveMutantService.save(fake_dna, false);
+            if (index % 2 === 0) {
+                await SaveMutantService.save(fake_dna, true);
+            }
+        }
 
     });
 
-    afterEach(async () => {
-        await db.close();
-    })
-
-    test('mutant stats', async () => {
+    test('should get mutant stats', async () => {
         jest.spyOn(db, 'query');
 
         const stats = {
-            count_mutant_dna: 40,
-            count_human_dna: 100,
-            ratio: 0.4
+            count_mutant_dna: 5,
+            count_human_dna: 10,
+            ratio: 0.5
         }
 
         const statsResult = await GetMutantStatsService.getMutantStats();
 
         expect(db.query).toHaveBeenCalledTimes(1);
         expect(statsResult).toEqual(stats);
+    });
+
+    test('mutant ratio should be count_mutant_dna/count_human_dna', async () => {
+        const statsResult = await GetMutantStatsService.getMutantStats();
+        
+        expect(statsResult.ratio).toEqual(statsResult.count_mutant_dna / statsResult.count_human_dna);
     });
 });

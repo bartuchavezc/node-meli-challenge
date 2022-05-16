@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652561505820" clover="3.2.0">
-  <project timestamp="1652561505820" name="All files">
-    <metrics statements="69" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="17" coveredmethods="7" elements="114" coveredelements="45" complexity="0" loc="69" ncloc="69" packages="5" files="8" classes="8"/>
+<coverage generated="1652710573752" clover="3.2.0">
+  <project timestamp="1652710573752" name="All files">
+    <metrics statements="69" coveredstatements="35" conditionals="28" coveredconditionals="19" methods="17" coveredmethods="9" elements="114" coveredelements="63" complexity="0" loc="69" ncloc="69" packages="5" files="8" classes="8"/>
     <package name="app">
       <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="bootstrap.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/bootstrap.js">
@@ -56,26 +56,26 @@
       </file>
     </package>
     <package name="app.mutant.models">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="MutantModel.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/models/MutantModel.js">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
     <package name="app.mutant.services">
-      <metrics statements="33" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="10" coveredmethods="7"/>
+      <metrics statements="33" coveredstatements="31" conditionals="28" coveredconditionals="19" methods="10" coveredmethods="9"/>
       <file name="GetMutantStatsService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/GetMutantStatsService.js">
-        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
       <file name="IsMutantService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/IsMutantService.js">
         <metrics statements="20" coveredstatements="19" conditionals="28" coveredconditionals="19" methods="7" coveredmethods="7"/>
@@ -101,13 +101,13 @@
         <line num="43" count="1" type="stmt"/>
       </file>
       <file name="SaveIsMutantResultService.js" path="/home/bchavez/Dev/node-meli-challenge/src/app/mutant/services/SaveIsMutantResultService.js">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="10" count="31" type="stmt"/>
+        <line num="11" count="31" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
       </file>
     </package>
   </project>
