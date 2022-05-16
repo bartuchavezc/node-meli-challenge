@@ -20,7 +20,7 @@ async function getMutantStats() {
     return {
         count_mutant_dna: stats[0].mutants,
         count_human_dna: stats[0].humans,
-        ratio: stats[0].mutants / stats[0].humans
+        ratio: (stats[0].mutants / stats[0].humans).toFixed(2)
     }
 }
 

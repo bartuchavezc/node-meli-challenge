@@ -16,7 +16,6 @@ if (appConfig.enviroment == "test") {
 }
 
 if (appConfig.enviroment == "production" && dbConfig.provider == "GCP") {
-
     options = {
         dialect: "postgres",
         host: `${process.env.DB_SOCKET_PATH || "/cloudsql"}/${process.env.INSTANCE_CONNECTION_NAME}`,
@@ -29,8 +28,6 @@ if (appConfig.enviroment == "production" && dbConfig.provider == "GCP") {
     };
 }
 
-
-
-const sequelizePostgressClient = new Sequelize(options, { logging: false });
+const sequelizePostgressClient = new Sequelize(options);
 
 module.exports = sequelizePostgressClient;
