@@ -3,3 +3,4 @@ app.yml
 .env
 lcov-report/
 lcov.info
+.vscode/
