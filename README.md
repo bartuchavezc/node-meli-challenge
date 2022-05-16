@@ -16,6 +16,11 @@ Luego puede iniciar la API corrien el comando `npm start`
 
 
 
+#### Tests
+
+Para correr los tests basta con ejecutar `npm run test` o `npm run test-report` para ver el detalle y el code coverage
+
+
 ------
 
 #### Mutant service: 
