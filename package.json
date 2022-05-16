@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "NODE_ENV=test jest --runInBand",
     "test-report": "NODE_ENV=test jest --runInBand --coverage --coverageDirectory='./' --collectCoverageFrom='./src/app/**/*.js'"
   },

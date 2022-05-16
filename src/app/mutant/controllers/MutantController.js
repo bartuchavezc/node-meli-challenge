@@ -15,9 +15,7 @@ function isMutant(req, res) {
 
         SaveIsMutantResultService.save(dna.join("\n"), mutant);
 
-        return res.json({
-            isMutant: mutant
-        });
+        return isMutant ? res.status(200).send() : res.status(403).send();
 
     } catch (error) {
         res.status(500).json({
