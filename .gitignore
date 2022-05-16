@@ -2,3 +2,4 @@ node_modules/
 app.yml
 .env
 lcov-report/
+lcov.info
