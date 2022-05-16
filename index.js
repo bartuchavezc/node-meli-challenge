@@ -1,13 +1,16 @@
-const { configure, initServer } = require('./src/app/bootstrap');
+const app = require('./src/app/bootstrap');
 
 if (process.env.NODE_ENV === 'development') {
     require('dotenv').config();
 }
 
-const app = require('express')();
 const port = process.env.PORT || 8080;
 
-configure(app);
-initServer(app, port);
+db.sync();
+
+await db.authenticate().then(_ => console.log("Database connection has been established successfully."));
 
 
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
